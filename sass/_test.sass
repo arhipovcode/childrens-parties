@@ -1,0 +1,183 @@
+.test
+  background-color: #f9f9f9
+  padding: 90px 0
+  &-title
+    text-align: center
+    span
+      font-size: 60px
+      +painter
+      font-weight: 400
+      color: $primary-text
+    &__discount
+      font-size: 26px
+      font-weight: 700
+      +light
+      max-width: 575px
+      text-align: center
+      margin: 10px auto 60px
+      strong
+        +bold
+  &-block
+    position: relative
+    max-width: 1010px
+    margin: 0 auto
+    box-shadow: 0 10px 20px 1px rgba(61, 61, 61, 0.06)
+    border-radius: 10px
+    display: flex
+    justify-content: space-between
+    z-index: 5
+    &__left
+      border-radius: 10px 0 0 10px
+      width: 61%
+      padding: 70px 55px 80px
+      background-color: #fff
+      z-index: 5
+    &__right
+      border-radius: 0 10px 10px 0
+      width: 39%
+      padding: 50px 46px 36px 40px
+      background-image: linear-gradient(to top, rgba(47, 128, 237, 0.3) 0%, rgba(161, 207, 255, 0.3) 100%)
+    &__offers
+      position: relative
+      text-align: center
+      padding: 12px 30px 12px 80px
+      margin: 0 auto 30px
+      max-width: 245px
+      box-shadow: 0 10px 20px 1px rgba(61, 61, 61, 0.06)
+      border-radius: 10px
+      background-color: #ffffff
+      img
+        position: absolute
+        left: -45px
+        top: -21px
+    &__expert
+      display: flex
+      align-items: center
+      margin-top: 40px
+      img
+        margin-right: 20px
+      strong
+        font-size: 20px
+        font-weight: 700
+        +bold
+        display: block
+
+.micro-transparent
+  position: absolute
+  bottom: -90px
+  left: -95px
+  z-index: 0
+
+.block-circle
+  position: absolute
+  width: 36px
+  height: 36px
+  right: -18px
+  top: 50%
+  transform: translateY(-50%)
+  background-color: #fff
+  border-radius: 50%
+  &::after
+    content: ''
+    display: block
+    background-image: url(../img/test/padlock.png), linear-gradient(to top, rgba(255, 94, 98, 0.9) 0%, rgba(229, 149, 118, 0.9) 100%)
+    background-repeat: no-repeat
+    background-position: center center
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+    width: 26px
+    height: 26px
+    border-radius: 50%
+
+.expert__text
+  font-size: 16px
+  +light
+  font-weight: 300
+
+.expert__desc
+  border-radius: 10px
+  margin-top: 20px
+  font-size: 16px
+  font-weight: 300
+  padding: 19px 20px
+  background-color: #ffffff
+  opacity: 0.5
+  position: relative
+  &::after
+    content: ''
+    display: block
+    position: absolute
+    width: 12px
+    height: 12px
+    background-color: #fff
+    transform: rotate(-45deg)
+    top: -6px
+    left: 29px
+
+.offer__text
+  margin: 0 auto
+  text-align: left
+  font-size: 16px
+  font-weight: 500
+  // max-width: 130px
+
+.left-block__title
+  font-size: 30px
+  font-weight: 700
+  margin-bottom: 38px
+
+.right-block__title
+  font-size: 30px
+  font-weight: 700
+  text-align: center
+
+.test-block__desc
+  font-size: 80px
+  text-align: center
+  font-weight: 400
+  margin-top: 14px
+  margin-bottom: 18px
+  display: block
+  background: linear-gradient(to top, #f46b45 0%, #eea849 100%)
+  -webkit-background-clip: text
+  background-clip: text
+  +painter
+  color: $primary-text
+
+.progress
+  margin-bottom: 60px
+  border-radius: 15px
+  background-color: #f6f6f6
+  position: relative
+  &-line
+    background-color: #b2c871
+    height: 100%
+    position: absolute
+    width: 20%
+    border-radius: 15px
+    left: 0
+    background-image: repeating-linear-gradient(-55deg, transparent, transparent 6px, #ccdba2 5px, #ccdba2 10px), linear-gradient(to top, rgba(183, 203, 123, 0.9) 0%, rgba(167, 191, 92, 0.9) 100%)
+  &-text
+    color: #bbbbbb
+    font-size: 12px
+    font-weight: 500
+    padding: 8px 0
+    text-align: center
+
+.checkbox
+  &-wrap
+    display: flex
+    flex-wrap: wrap
+  &-block
+    display: flex
+    align-items: baseline
+    margin-bottom: 40px
+    min-width: 42%
+    &:last-child
+      margin-bottom: 49px
+  label
+    margin-left: 11px
+    font-size: 16px
+    +thin

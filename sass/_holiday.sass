@@ -1,0 +1,54 @@
+.holiday
+  padding-bottom: 110px
+  &-title
+    margin-bottom: 48px
+    text-align: center
+    span
+      color: $primary-text
+      +painter
+      font-size: 60px
+      font-weight: 400
+  &-block
+    background-image: url(../img/holiday/holiday-bg.png)
+    background-repeat: no-repeat
+    background-position: center 5px
+    &_bg
+      display: none
+    &-item
+      display: flex
+      align-items: baseline
+      justify-content: center
+      &__2,
+      &__3
+        margin-bottom: 76px
+      &:nth-child(1) .item-text
+        max-width: 200px
+      &:nth-child(2) .holiday-item:nth-child(1) .item-text // ширина текста
+        max-width: 188px
+      &:nth-child(2) .holiday-item:nth-child(2) .item-text // ширина текста
+        max-width: 270px
+      &:nth-child(3) .holiday-item:nth-child(1) // отступ блока
+        margin-right: 660px
+        margin-left: 30px
+      &:nth-child(3) .holiday-item:nth-child(1) .item-text // ширина текста
+        max-width: 160px
+      &:nth-child(3) .holiday-item:nth-child(2) .item-text // ширина текста
+        max-width: 220px
+      &:nth-child(4) .item-text
+        max-width: 220px
+      &:nth-child(4) .holiday-item:nth-child(1) // отступ блока
+        margin-right: 620px
+      &:nth-child(5) .item-text
+        max-width: 285px
+      &:nth-child(5) .holiday-item:nth-child(1) // отступ блока
+        margin-right: 450px
+        margin-left: 30px
+  &-item
+    img
+      margin-bottom: 20px
+
+.item-text
+  font-size: 20px
+  +thin
+  strong
+    +regular

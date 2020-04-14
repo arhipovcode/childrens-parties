@@ -1,0 +1,98 @@
+.header
+  padding-top: 30px
+  background-image: url(../img/main/main-bg.jpg)
+  background-repeat: no-repeat
+  background-size: cover
+  position: relative
+  &::after
+    content: ''
+    display: block
+    position: absolute
+    background-image: url(../img/main/ballons.png)
+    background-size: contain
+    background-repeat: no-repeat
+    top: 15%
+    left: 5%
+    transform: translateX(-2.5%)
+    width: 96%
+    height: 100%
+  &-wrap
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &-logo,
+  &-phone
+    display: flex
+    align-items: center
+  &-logo img
+    display: block
+  &-desc
+    font-size: 12px
+    +thin
+    font-weight: 400
+    margin-left: 50px
+    max-width: 185px
+  &-title
+    font-weight: 500
+    +medium
+    span
+      color: $primary-text
+      font-size: 60px
+      +painter
+    p
+      font-size: 26px
+      line-height: 37px
+      margin-top: 18px
+      +light
+    strong
+      +bold
+  &-request
+    margin-top: 55px
+    margin-bottom: 27px
+    font-size: 30px
+    max-width: 560px
+    +light
+    span
+      color: $primary-text
+      +bold
+    strong
+      +bold
+  &-form
+    position: relative
+    margin-bottom: 19px
+  &-input
+    color: $primary-text
+    font-size: 20px
+    max-width: 201px
+    margin-right: 20px
+  &-conditions
+    font-size: 12px
+    opacity: 0.5
+  &-btn__phone
+    padding: 16px
+    margin-right: 9px
+    border-radius: 50%
+    background: linear-gradient(to top, rgba(244, 107, 69, 1) 0%, rgba(238, 168, 73, 1) 100%)
+
+.phone
+  margin-right: 41px
+  font-size: 30px
+  font-weight: 700
+  +medium
+  &:hover
+    color: $primary-text
+.content-wrap
+  margin-top: 31px
+  display: flex
+  align-items: center
+  justify-content: space-between
+.conditions__link //условия обработки
+  color: $primary-text
+  border-bottom: 1px solid $primary-text
+  &:hover
+    color: $text-color
+    border-bottom: 1px solid $text-color
+.content-left
+  z-index: 5
+.content-right img
+  display: block

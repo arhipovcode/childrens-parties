@@ -1,0 +1,88 @@
+.people-prof
+  padding-top: 125px
+  &-title
+    max-width: 870px
+    margin-bottom: 55px
+    span
+      +painter
+      font-size: 60px
+      font-weight: 400
+      color: $primary-text
+  &-slider
+    margin-bottom: 70px
+    display: flex
+    align-items: center
+    justify-content: center
+    & .pagination__left-btn
+      margin-right: 27px
+    & .pagination__right-btn
+      margin-left: 27px
+  &__photo
+    padding: 10px
+    box-shadow: 0 10px 20px 1px rgba(61, 61, 61, 0.1)
+    border-radius: 10px
+    background-color: #ffffff
+    z-index: 2
+    img
+      display: block
+  &__desc
+    padding: 10px
+    box-shadow: 0 10px 20px 1px rgba(61, 61, 61, 0.1)
+    background-color: #ffffff
+    border-radius: 10px
+    z-index: 1
+    margin-left: -35px
+    &-inside
+      padding: 0 21px 59px 62px
+      border-radius: 10px
+      border: 1px solid #f4f4f4
+    &-name
+      font-size: 30px
+      font-weight: 700
+      margin-top: 39px
+    &-prgf
+      font-size: 20px
+      font-weight: 300
+      margin-top: 10px
+      margin-bottom: 29px
+      max-width: 310px
+      line-height: 26px
+    &-text
+      font-weight: 300
+      line-height: 22px
+      max-width: 320px
+
+.people-slider-nav
+  padding: 0 30px 110px 30px
+  display: flex
+  justify-content: space-between
+  align-items: baseline
+  overflow: overlay
+  img
+    display: block
+  &__item
+    padding: 10px
+    max-width: 261px
+    min-height: 378px
+    transition: 0.5s
+    &:hover
+      box-shadow: 0 10px 20px 1px rgba(61, 61, 61, 0.1)
+      border-radius: 10px
+      background-color: #ffffff
+      cursor: pointer
+      transform: scale(1.01)
+    img
+      display: block
+      width: 239px
+      height: 239px
+    &-name
+      +bold
+      margin-top: 23px
+      font-size: 28px
+      font-weight: 700
+.nav-item__desc
+  +light
+  margin-top: 10px
+  font-size: 20px
+  line-height: 26px
+  font-weight: 300

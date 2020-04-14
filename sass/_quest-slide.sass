@@ -1,0 +1,128 @@
+.quest-slide
+  background-color: #f9f9f9
+  padding-top: 125px
+  padding-bottom: 90px
+  &-head
+    display: flex
+    justify-content: space-between
+    margin-bottom: 50px
+  &-title
+    width: 590px
+    span
+      +painter
+      color: $primary-text
+      font-size: 60px
+      font-weight: 400
+  &-text
+    box-shadow: 0 10px 20px 1px rgba(61, 61, 61, 0.1)
+    border-radius: 10px
+    background-color: #ffffff
+    padding: 10px
+    width: 490px
+  &__descr
+    display: flex
+    align-items: center
+    border-radius: 10px
+    border: 1px solid #f4f4f4
+    height: 100%
+    padding-right: 32px
+    img
+      margin-left: -35px
+      margin-right: 20px
+    p
+      font-size: 16px
+      font-weight: 300
+      line-height: 24px
+  &-images
+    display: flex
+    justify-content: space-between
+    align-items: center
+  &-left
+    display: flex
+    justify-content: space-between 
+    flex-wrap: wrap
+    width: 41%
+    img
+      margin-bottom: 30px
+      display: block
+      &:nth-child(5)
+        margin-bottom: 0
+      &:last-child
+        margin-bottom: 0
+  &-right
+    box-shadow: 0 10px 20px 1px rgba(61, 61, 61, 0.1)
+    border-radius: 10px
+    background-color: #ffffff
+    padding: 10px 10px 35px 10px
+    width: 50%
+    img
+      display: block
+      margin: 0 auto 26px
+      width: 100%
+      border-radius: 10px
+    p
+      margin-left: 31px
+  &-pagination
+    display: flex
+    justify-content: center
+    align-items: center
+    margin-top: 50px
+.name-quest
+  font-size: 26px
+  font-weight: 700
+  margin-bottom: 10px
+.descr-quest
+  font-weight: 300
+.pagination_arrow
+  width: 70px
+  height: 70px
+  border-radius: 50%
+  border: none
+  outline: none
+  box-shadow: inset 0 0 7px rgba(255, 255, 255, 0.2)
+  background-repeat: no-repeat
+  background-position: center
+  background-image: linear-gradient(to top, #f46b45 0%, #eea849 100%), linear-gradient(to top, #fdcc72 0%, #fbd899 100%)
+  &:hover
+    cursor: pointer
+    background: -webkit-gradient(linear, left bottom, left top, from(#ff3700), to(#ffd69f))
+    background: linear-gradient(to top, #ff3700 0%, #ffd69f 100%)
+.pagination__left-btn
+  margin-right: 44px
+  &:before
+    content: ''
+    width: 12px
+    height: 22px
+    display: block
+    margin: 0 auto
+    background-size: contain
+    background-image: url(../img/quest-slide/left-arrow.png)
+    background-repeat: no-repeat
+.pagination__right-btn
+  margin-left: 44px
+  &:hover
+    cursor: pointer
+  &:before
+    content: ''
+    width: 12px
+    height: 22px
+    display: block
+    margin: 0 auto
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: center center
+    background-image: url(../img/quest-slide/right-arrow.png)
+.pagination__item
+  width: 18px
+  height: 18px
+  background-color: #e8e8e8
+  border-radius: 50%
+  margin-left: 16px
+  margin-right: 16px
+  transition: all 0.3s
+  &_active
+    background: linear-gradient(to top, #ff3700 0%, #ffd69f 100%)
+  &:hover
+    cursor: pointer
+    background: -webkit-gradient(linear, left bottom, left top, from(#ff3700), to(#ffd69f))
+    background: linear-gradient(to top, #ff3700 0%, #ffd69f 100%)

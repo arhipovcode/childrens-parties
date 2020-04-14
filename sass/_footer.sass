@@ -1,0 +1,68 @@
+.footer
+  background: url(../img/footer/footer-bg.jpg) no-repeat
+  background-position: top
+  background-size: cover
+  padding-top: 229px
+  padding-bottom: 30px
+  &-title
+    max-width: 760px
+    margin-bottom: 50px
+    span
+      +painter
+      font-size: 60px
+      font-weight: 400
+      color: $primary-text
+  &-contacts
+    display: flex
+    align-items: center
+  &-block-map
+    box-shadow: 0 10px 20px 1px rgba(61, 61, 61, 0.1)
+    border-radius: 10px
+    background-color: #ffffff
+    padding: 10px
+    width: 580px
+    margin-right: 70px
+  &-address
+    display: flex
+    align-items: center
+    img
+      margin-right: 20px
+  &-block-title
+    +medium
+    font-size: 30px
+    font-weight: 700
+    margin-bottom: 20px
+  &-text
+    max-width: 265px
+    line-height: 26px
+  &-text_adrs
+    margin-bottom: 19px
+  &-phone
+    margin-top: 50px
+    margin-bottom: 8px
+    display: block
+  &-btn
+    margin-top: 20px
+  &-label
+    display: flex
+    align-items: center
+    justify-content: space-between
+    margin-top: 30px
+  &-policy-lnk
+    color: $primary-text
+    font-weight: 500
+    transition: 0.3s
+    &:hover
+      color: $text-color
+  &-developer-lnk
+    max-width: 230px
+    text-align: right
+    a
+      color: $primary-text
+      border-bottom: 1px solid $primary-text
+      transition: 0.3s
+      &:hover
+        color: $text-color
+        border-bottom: 1px solid $text-color
+.mail-title
+  margin-top: 49px

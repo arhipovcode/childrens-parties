@@ -1,0 +1,50 @@
+@import 'var'
+@import 'mixin'
+@import 'interface'
+@import 'fonts'
+@import 'header'
+@import 'about'
+@import 'holiday'
+@import 'test'
+@import 'organization'
+@import 'programs'
+@import 'bright_holiday'
+@import 'quest-slide'
+@import 'people-prof'
+@import 'reviews'
+@import 'footer'
+@import 'modals'
+@import 'slider'
+
+
+*
+	margin: 0
+	padding: 0
+*,
+*:after,
+*:before
+  box-sizing: border-box
+
+a
+  text-decoration: none
+  color: $text-color
+  transition: 0.5s
+    
+body
+  color: $text-color
+  +regular
+
+.container
+  margin: 0 auto
+  max-width: 1170px
+  
+.title
+  font-size: 46px
+  font-weight: 500
+  line-height: 56px
+  +medium
+
+@import 'media1170'
+@import 'media992'
+@import 'media768'
+@import 'media670'

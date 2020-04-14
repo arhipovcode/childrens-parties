@@ -1,0 +1,126 @@
+.organization
+  padding-top: 124px
+  position: relative
+  overflow: hidden
+  &-title
+    max-width: 920px
+    line-height: 56px
+    margin-bottom: 55px
+    span
+      font-size: 60px
+      +painter
+      font-weight: 400
+      color: $primary-text
+  &-manadger
+    position: absolute
+    left: 48%
+    top: 205px
+    z-index: -1
+    transform: scale(0.9)
+  &-wrap
+    display: flex
+    justify-content: space-between
+    margin-bottom: 100px
+    max-width: 720px
+  &-block
+    display: flex
+    align-items: baseline
+    margin-bottom: 40px
+    &__left
+      margin-right: 20px
+    &__number
+      +painter
+      margin-right: 20px
+      font-size: 20px
+      font-weight: 400
+      color: #fff
+      width: 36px
+      height: 36px
+      border-radius: 50%
+      text-align: center
+      line-height: 36px
+      background-image: linear-gradient(to top, rgba(244, 107, 69, 0.8) 0%, rgba(238, 168, 73, 0.8) 100%)
+  &__text
+    font-size: 20px
+    max-width: 83%
+    +thin
+    font-weight: 100
+    strong
+      font-weight: 700
+      +regular
+  &-form
+    display: flex
+    position: relative
+    &::after
+      content: ''
+      background-image: url(../img/organization/bg.png)
+      background-repeat: no-repeat
+      width: 100%
+      height: 100%
+      position: absolute
+      top: -80px
+      right: 0
+    &-left
+      z-index: 5
+      img
+        display: block
+        margin-top: 40px
+        margin-left: 33px
+    &__title
+      font-size: 50px
+      margin-bottom: 20px
+    &__desc
+      font-size: 26px
+      font-weight: 300
+      max-width: 470px
+      position: relative
+      +light
+      strong
+        +bold
+    &-right
+      width: 400px
+      max-height: 596px
+      margin-left: 150px
+      padding: 10px
+      box-shadow: 0 10px 20px 1px rgba(61, 61, 61, 0.06)
+      border-radius: 10px
+      background-color: #ffffff
+      z-index: 5
+
+.block-form
+  padding: 50px 40px 10px 40px
+  height: 100%
+  border-radius: 10px
+  border: 1px solid #f4f4f4
+  &__title
+    font-size: 30px
+    font-weight: 300
+    line-height: 36px
+    margin-bottom: 20px
+    span
+      font-size: 40px
+      +painter
+      font-weight: 600
+      display: block
+  &__desc
+    font-size: 20px
+    font-weight: 400
+    +thin
+    margin-bottom: 34px
+  &__offer
+    font-size: 12px
+    opacity: 0.5
+    text-align: center
+    margin-top: 10px
+  &__inp
+    border-radius: 10px
+    background-color: #f1f1f1
+    width: 100%
+    padding: 23px 31px
+    margin-bottom: 20px
+    font-size: 20px
+  &__btn
+    padding: 30px 57px 30px 57px
+    text-transform: uppercase
+    display: block
+    margin: 10px auto 0

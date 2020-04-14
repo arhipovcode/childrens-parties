@@ -1,0 +1,108 @@
+.bright_holiday
+  padding-bottom: 100px
+  &-title
+    text-align: center
+    margin-bottom: 40px
+    span
+      color: $primary-text
+      +painter
+      font-size: 60px
+      font-weight: 400
+
+.location-block
+  display: flex
+  flex-wrap: wrap
+  justify-content: space-between
+  width: 63%
+  margin: 0 auto 40px
+  &__link
+    min-height: 60px
+    font-size: 20px
+    padding: 0 20px
+    box-shadow: 0 6px 20px 1px rgba(61, 61, 61, 0.06)
+    border-radius: 10px
+    border: none
+    background-color: #ffffff
+    margin-bottom: 20px
+    transition: all 0.7s
+    display: flex
+    align-items: center
+    z-index: 1
+    position: relative
+    overflow: hidden
+    outline: none
+    img
+      margin-right: 13px 
+    &:before
+      content: ""
+      position: absolute
+      right: 0
+      top: 0
+      width: 0
+      height: 100%
+      border-radius: 10px
+      background-color: #e8e8e8
+      transition: all 0.7s
+      z-index: -1
+      background-image: linear-gradient(to top, rgba(244, 107, 69, 0.9) 0%, rgba(238, 168, 73, 0.9) 100%)
+    &:hover
+      cursor: pointer
+      color: #fff
+    &:hover:before
+      width: 100%
+      left: 0
+    &:hover img
+      filter: brightness(10)
+    &_active
+      background-image: linear-gradient(to top, rgba(244, 107, 69, 0.9) 0%, rgba(238, 168, 73, 0.9) 100%)
+      color: #fff
+      img
+        filter: brightness(10)
+      &:before
+        display: none
+
+.location-tabs
+  justify-content: space-between
+  display: none
+.tabs-active
+  display: flex
+
+.location-image
+  box-shadow: 0 10px 20px 1px rgba(61, 61, 61, 0.1)
+  padding: 10px
+  border-radius: 10px
+  background-color: #ffffff
+  margin-right: 40px
+  img
+    display: block
+
+.location-information
+  padding-top: 14px
+  &-title
+    margin-bottom: 11px
+    font-size: 30px
+    font-weight: 700
+  &-paragraph
+    font-size: 20px
+    font-weight: 300
+    margin-bottom: 40px
+    width: 88%
+  &-items
+    display: flex
+    font-size: 16px
+    font-weight: 400
+    +thin
+  &__btn
+    text-transform: uppercase
+    margin-top: 28px
+
+.item
+  display: flex
+  align-items: start
+  width: 250px
+  margin-right: 35px
+  margin-bottom: 19px
+  &__descr
+    line-height: 22px
+  img
+    margin-right: 10px

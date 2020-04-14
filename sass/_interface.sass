@@ -1,0 +1,91 @@
+input
+  outline: none
+  border: none
+  padding: 27px 31px
+  border-radius: 10px
+  background-color: #ffffff
+  &::placeholder
+    color: $text-color
+    +regular
+
+.button
+  outline: none
+  border: none
+  background: linear-gradient(to top, rgba(244, 107, 69, 1) 0%, rgba(238, 168, 73, 1) 100%)
+  background-color: $primary-btn
+  border-radius: 50px
+  box-shadow: 0 6px 20px 1px rgba(212, 66, 68, 0.4)
+  padding: 33px 51px
+  color: #fff
+  font-size: 20px
+  +regular
+  transition: all 0.2s
+  &:hover
+    cursor: pointer
+    background: linear-gradient(to top, rgba(255, 55, 0, 1) 0%, rgba(255, 214, 159, 1) 100%)
+  &:active
+    box-shadow: none
+
+.header-btn
+  padding: 5px 22px 5px 5px
+  color: $text-color
+  font-weight: 400
+  background: #fff
+  box-shadow: none
+  display: flex
+  align-items: center
+  &:hover
+    box-shadow: 0 6px 20px 1px rgba(212, 66, 68, 0.5)
+    background: #fff
+    transition: 0.3s
+  &:active
+    box-shadow: none
+
+.header-form__btn
+  text-transform: uppercase
+  position: absolute
+  top: -6px
+  right: -90px
+
+.holiday-btn
+  text-transform: uppercase
+  display: block
+  margin: 0 auto
+  padding: 32px 42px
+  margin-top: 62px
+
+.check-btn
+  padding: 23px 50px
+  text-transform: uppercase
+
+.game-btn
+  padding: 23px 53px
+  text-transform: uppercase
+  display: block
+  margin: 0 auto
+
+.refresh-btn
+  border-radius: 35px
+  border: 2px solid $primary-text
+  background-image: linear-gradient(to top, rgba(244, 107, 69, 0.9) 0%, rgba(238, 168, 73, 0.9) 100%)
+  background: transparent
+  color: $primary-text
+  font-size: 18px
+  font-weight: 400
+  padding: 25px 38px
+  display: flex
+  align-items: center
+  transition: all 0.3s
+  outline: none
+  margin: 0 auto
+  transition: 0.5s
+  img
+    margin-left: 19px
+    transition: all 2s
+  &:hover
+    cursor: pointer
+    box-shadow: 0 6px 20px 1px rgba(212, 66, 68, 0.5)
+  &:hover img
+    transform: rotate(270deg)
+  &:active
+    box-shadow: none
