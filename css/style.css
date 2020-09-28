@@ -4293,7 +4293,7 @@ body {
   }
   .quest-slide-left img {
     width: 48%;
-    height: auto;
+    height: inherit;
     margin-bottom: 15px;
   }
   .quest-slide-right {
