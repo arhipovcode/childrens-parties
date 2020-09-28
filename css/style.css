@@ -4425,6 +4425,7 @@ body {
   }
   .reviews-slider-photo img {
     display: block;
+    height: intrinsic;
   }
   .reviews-slider .slick-arrow.slick-prev:before {
     width: 10px;
