@@ -166,26 +166,27 @@ function persentValue(numBlock) {
   if (numBlock == 0) {
     persentInfo.textContent = '0%';
     progressLine.style.width = '20%';
+    questionNumber.innerText = '1';
   }
   if (numBlock == 1) {
     persentInfo.textContent = '2%';
     progressLine.style.width = '33%';
-    questionNumber.textContent = '2';
+    questionNumber.innerText = '2';
   }
   if (numBlock == 2) {
     persentInfo.textContent = '4%';
     progressLine.style.width = '49%';
-    questionNumber.textContent = '3';
+    questionNumber.innerText = '3';
   }
   if (numBlock == 3) {
     persentInfo.textContent = '6%';
     progressLine.style.width = '66%';
-    questionNumber.textContent = '4';
+    questionNumber.innerText = '4';
   }
   if (numBlock == 4) {
     persentInfo.textContent = '8%';
     progressLine.style.width = '83%';
-    questionNumber.textContent = '5';
+    questionNumber.innerText = '5';
   }
   if (numBlock == 5) {
     persentInfo.textContent = '10%';

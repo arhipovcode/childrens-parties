@@ -504,7 +504,7 @@
 }
 
 .about-us:nth-child(3) .about-item {
-  padding: 26px 25px 26px 102px;
+  padding: 24px 5px 26px 98px;
 }
 
 .about-item {
@@ -1254,7 +1254,7 @@
   opacity: 0.5;
   text-align: center;
   margin: 10px auto;
-  width: 85%;
+  width: 100%;
 }
 
 .block-form__inp {
@@ -1823,8 +1823,8 @@
 
 .pagination__left-btn:before {
   content: '';
-  width: 12px;
-  height: 22px;
+  width: 11px;
+  height: 20px;
   display: block;
   margin: 0 auto;
   background-size: contain;
@@ -1842,8 +1842,8 @@
 
 .pagination__right-btn:before {
   content: '';
-  width: 12px;
-  height: 22px;
+  width: 11px;
+  height: 20px;
   display: block;
   margin: 0 auto;
   background-size: contain;
@@ -2888,8 +2888,8 @@ input[type="checkbox"]:checked + label .checked-span:after {
 
 .slick-arrow.slick-prev:before {
   content: '';
-  width: 12px;
-  height: 22px;
+  width: 10px;
+  height: 18px;
   display: block;
   margin: 0 auto;
   background-size: contain;
@@ -2903,8 +2903,8 @@ input[type="checkbox"]:checked + label .checked-span:after {
 
 .slick-arrow.slick-next:before {
   content: '';
-  width: 12px;
-  height: 22px;
+  width: 10px;
+  height: 18px;
   display: block;
   margin: 0 auto;
   background-size: contain;
@@ -3201,14 +3201,14 @@ body {
   }
   .about-us {
     width: 30%;
-    min-height: 135px;
+    min-height: 136px;
   }
   .about-us:nth-child(1)::before {
     min-height: 150px;
     left: -5px;
   }
   .about-us:nth-child(1) .about-item {
-    padding: 20px 20px 17px 141px;
+    padding: 18px 12px 17px 141px;
   }
   .about-us:nth-child(2)::before {
     min-height: 150px;
@@ -3705,6 +3705,14 @@ body {
   }
   .reviews-wrapper-btn {
     margin-bottom: 60px;
+  }
+  .videoplay {
+    width: 65px;
+    height: 65px;
+  }
+  .videoplay:before {
+    width: 79px;
+    height: 79px;
   }
   .footer {
     padding-top: 100px;
@@ -4327,11 +4335,11 @@ body {
   }
   .pagination__left-btn:before {
     height: 14px;
-    width: 12px;
+    width: 9px;
   }
   .pagination__right-btn:before {
     height: 14px;
-    width: 12px;
+    width: 9px;
   }
   .people-prof__photo {
     height: auto;
@@ -4953,6 +4961,7 @@ body {
   .programs-form-title {
     margin: 0 auto 20px;
     width: 80%;
+    max-width: 350px;
     text-align: center;
   }
   .programs-form:before {
@@ -5225,7 +5234,7 @@ body {
     display: none;
   }
   .organization-form-right {
-    width: 90%;
+    width: 70%;
   }
   .block-circle {
     width: 33px;
