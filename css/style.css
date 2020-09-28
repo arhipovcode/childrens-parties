@@ -3892,7 +3892,7 @@ body {
     font-size: 15px;
   }
   .about-us {
-    max-width: 28%;
+    max-width: 30%;
     min-height: 110px;
   }
   .about-us:nth-child(1)::before {
@@ -4489,6 +4489,11 @@ body {
   }
   .footer-btn img {
     margin-right: 10px;
+  }
+  .footer-label {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
   .footer-label img {
     display: block;
