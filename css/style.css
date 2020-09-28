@@ -3840,11 +3840,26 @@ body {
     left: 71%;
     padding: 21px 23px;
   }
+  .header-conditions {
+    width: 80%;
+  }
   .content-left {
     width: 72%;
   }
-  .question {
-    min-height: 250px;
+  .question_1 {
+    min-height: 230px;
+  }
+  .question_2 {
+    min-height: 210px;
+  }
+  .question_3 {
+    min-height: 215px;
+  }
+  .question_4, .question_5 {
+    min-height: 212px;
+  }
+  .question_6 {
+    min-height: 212px;
   }
   .question-inp {
     padding: 16px 20px;
@@ -3949,7 +3964,7 @@ body {
   }
   .test-block__offers img {
     width: 40%;
-    top: -5px;
+    top: -15px;
     left: -30px;
   }
   .test-block__left {
