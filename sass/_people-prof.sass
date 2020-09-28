@@ -9,22 +9,33 @@
       font-weight: 400
       color: $primary-text
   &-slider
-    margin-bottom: 70px
     display: flex
     align-items: center
     justify-content: center
-    & .pagination__left-btn
-      margin-right: 27px
-    & .pagination__right-btn
-      margin-left: 27px
-  &__photo
+    position: relative
+    width: 80%
+    margin: 0 auto 70px
+    min-width: 0
+  &-cart
+    display: flex
+    padding: 10px 0 30px 0
+    align-items: center
+    justify-content: center
+    outline: none
+    min-width: 0
+  &__block
     padding: 10px
     box-shadow: 0 10px 20px 1px rgba(61, 61, 61, 0.1)
     border-radius: 10px
     background-color: #ffffff
     z-index: 2
-    img
-      display: block
+  &__photo
+    background-size: cover
+    background-repeat: no-repeat
+    background-position: center 0
+    border-radius: 10px
+    width: 295px
+    height: 345px
   &__desc
     padding: 10px
     box-shadow: 0 10px 20px 1px rgba(61, 61, 61, 0.1)
@@ -33,56 +44,81 @@
     z-index: 1
     margin-left: -35px
     &-inside
-      padding: 0 21px 59px 62px
+      padding: 0 21px 25px 44px
       border-radius: 10px
       border: 1px solid #f4f4f4
     &-name
-      font-size: 30px
+      font-size: 25px
       font-weight: 700
-      margin-top: 39px
+      margin-top: 23px
     &-prgf
-      font-size: 20px
+      font-size: 17px
       font-weight: 300
-      margin-top: 10px
-      margin-bottom: 29px
+      margin-top: 8px
+      margin-bottom: 15px
       max-width: 310px
-      line-height: 26px
+      line-height: 24px
     &-text
       font-weight: 300
-      line-height: 22px
+      font-size: 15px
+      line-height: 21px
       max-width: 320px
+
+.photo_1
+  background-image: url(../img/people-prof/employee_01.jpg)
+.photo_2
+  background-image: url(../img/people-prof/employee_02.jpg)
+.photo_3
+  background-image: url(../img/people-prof/employee_03.jpg)
+.photo_4
+  background-image: url(../img/people-prof/employee_04.jpg)
+.photo_5
+  background-image: url(../img/people-prof/employee_05.jpg)
+.photo_6
+  background-image: url(../img/people-prof/employee_06.jpg)
 
 .people-slider-nav
   padding: 0 30px 110px 30px
   display: flex
   justify-content: space-between
   align-items: baseline
-  overflow: overlay
+  // overflow: overlay
   img
     display: block
   &__item
-    padding: 10px
-    max-width: 261px
-    min-height: 378px
-    transition: 0.5s
-    &:hover
-      box-shadow: 0 10px 20px 1px rgba(61, 61, 61, 0.1)
-      border-radius: 10px
-      background-color: #ffffff
-      cursor: pointer
-      transform: scale(1.01)
-    img
-      display: block
-      width: 239px
-      height: 239px
-    &-name
-      +bold
-      margin-top: 23px
-      font-size: 28px
-      font-weight: 700
+    padding: 0 5px 30px 5px
+    outline: none
+
 .nav-item__desc
   +light
   margin-top: 10px
   font-size: 20px
   line-height: 26px
   font-weight: 300
+  min-height: 52px
+
+.slider-nav-wrap
+  width: 95%
+  margin: 0 auto
+
+.slider-nav-block
+  width: 100%
+  margin: 0 auto
+  padding: 10px
+  min-height: 378px
+  outline: none
+  transition: 0.5s
+  &:hover
+    box-shadow: 0 10px 20px 1px rgba(61, 61, 61, 0.1)
+    border-radius: 10px
+    background-color: #ffffff
+    cursor: pointer
+    transform: scale(1.03)
+  img
+    display: block
+    width: 100%
+.people-slider-nav__item-name
+  +bold
+  margin-top: 23px
+  font-size: 28px
+  font-weight: 700

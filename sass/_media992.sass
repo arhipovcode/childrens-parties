@@ -1,4 +1,13 @@
 @media (max-width: 992px)
+  label
+    &:before
+      width: 24px
+      height: 24px
+    &:after
+      width: 10px
+      height: 10px
+      top: 7px
+      left: 7px  
   .container
     width: 95%
   .title
@@ -31,10 +40,30 @@
       font-size: 15px
       width: 32%
       margin-right: 15px
+      padding: 20px 15px
     &-form__btn
       left: 71%
-      padding: 23px 25px
+      padding: 21px 23px
     &-conditions
+
+  .question
+    min-height: 250px
+    &-inp
+      padding: 16px 20px
+      width: 100%
+  .check-btn
+    padding: 16px 40px
+  .back-btn
+    padding: 16px 40px
+    font-size: 15px
+    margin-left: 12px
+  .final-btn
+    padding: 18px 0
+    font-size: 13px !important
+    width: 50%
+  .my-range-block .irs--flat .irs-handle
+    width: 18px
+    height: 18px
 
   .content-wrap
     align-items: center
@@ -101,7 +130,7 @@
           top: -5px
           left: -30px
       &__left
-        padding: 35px 55px 35px
+        padding: 35px 32px 35px
       &__right
         padding: 35px 40px 20px 40px
       &__expert
@@ -113,10 +142,37 @@
   .progress
     margin-bottom: 50px
   .left-block__title
-    font-size: 21px
+    font-size: 18px
     margin-bottom: 20px
-  .checkbox-block
-    margin-bottom: 20px
+  .checkbox
+    &-block
+      margin-bottom: 20px
+      &-cldr
+        & input
+          padding: 16px 10px 16px 36px
+          background: url(../img/test/calendar.png) no-repeat top 12px left 13px
+          background-size: 18px
+          &::placeholder
+            font-size: 14px
+    &-qw-6
+      margin-bottom: 30px
+  .checkbox
+    &-lbl-wrap
+      margin-bottom: 12px
+    & label
+      font-size: 13px
+      line-height: 12px
+  .checked-span
+    width: 24px
+    height: 24px
+    margin-right: 7px
+    &:after
+      width: 10px      
+      height: 10px
+      top: 7px
+      left: 7px
+  .checkbox-btns-wrap
+    // justify-content: space-around
   .right-block__title
     font-size: 21px
   .test-block__desc
@@ -127,12 +183,10 @@
     font-size: 13px
   .expert__desc
     margin-top: 17px
-    font-size: 14px
+    font-size: 13px
     padding: 10px 20px
     &:after
       left: 22px
-  .check-btn
-    padding: 18px 46px
   .block-circle
     width: 30px
     height: 30px
@@ -173,7 +227,7 @@
           margin: 40px auto 0
       &-right
         margin-left: 0
-        width: 320px
+        width: 290px
     &__text
       font-size: 15px
   .block-form
@@ -217,6 +271,7 @@
       padding-top: 60px
       padding-bottom: 120px
       justify-content: space-around
+      overflow: hidden
       &:before
         width: 80%
         left: 50px
@@ -241,6 +296,7 @@
     font-size: 18px
     text-align: center
     width: 80%
+    min-height: 40px
     margin: 15px auto 20px
   .game-icon-block
     margin-bottom: 12px
@@ -251,15 +307,16 @@
     margin-top: 16px
     margin-bottom: 15px
   .game-btn
-    padding: 17px 42px
+    padding: 15px 30px
   .refresh-btn
-    padding: 15px 26px
+    padding: 15px 20px
   .location-block
     width: 535px
     &__link
       font-size: 14px
       padding: 0 10px
       margin-bottom: 15px
+      min-height: 50px
 
 
   .location-tabs
@@ -289,7 +346,7 @@
       margin-bottom: 9px
     &__btn
       position: absolute
-      padding: 23px 38px
+      padding: 20px 25px
       right: 50%
       bottom: -80px
       transform: translateX(50%)
@@ -316,6 +373,10 @@
       align-items: center
     &-title
       width: 40%
+      font-size: 22px
+      line-height: 30px
+      span
+        font-size: 28px
     &-images
       align-items: center
     &-left
@@ -341,46 +402,70 @@
   .descr-quest
     font-size: 13px
   .pagination_arrow
-      width: 35px
-      height: 35px
+      width: 45px
+      height: 45px
   .pagination__left-btn
     &:before
-      height: 12px
+      height: 14px
+      width: 12px
   .pagination__right-btn
     &:before
-      height: 12px
+      height: 14px
+      width: 12px
   .people-prof
     &__photo
-      width: 45%
+      height: auto
+      width: auto
+      min-height: 260px
     &-title
       margin-bottom: 45px
     &__desc
       width: 50%
+      margin-left: -20px
       &-name
         font-size: 20px
-        margin-top: 32px
+        margin-top: 5px
       &-text
         font-size: 14px
-      &-prgf
-        font-size: 15px
         line-height: 21px
-        margin-bottom: 17px
+      &-prgf
+        font-size: 14px
+        line-height: 18px
+        margin-bottom: 8px
+        margin-top: 5px
       &-inside
-        padding: 0 21px 30px 58px
-    &-slider .pagination__left-btn
-      margin-right: 0
+        padding: 0 5px 8px 20px
+    &__block
+      width: 45%
+    &-slider
+      width: 90%
+      margin: 0 auto
+      & .slick-arrow
+        width: 45px
+        height: 45px
+      & .slick-arrow.slick-prev
+        left: -40px
+        &:before
+          width: 10px
+          height: 14px
+      & .slick-arrow.slick-next
+        right: -40px
+        &:before
+          width: 10px
+          height: 14px
+      & .pagination__left-btn
+        margin-right: 0
     &-slider .pagination__right-btn
       margin-left: 0
   .people-slider-nav__item
     min-height: 280px
-    img
-      width: 170px
-      height: 155px
     &-name
-      font-size: 17px
+      font-size: 20px
       margin-top: 16px
+  .slider-nav-block
+    min-height: 300px
   .nav-item__desc
-    font-size: 14px
+    font-size: 15px
     line-height: 19px
     margin-top: 7px
   .reviews
@@ -397,8 +482,35 @@
     &-slider-photo
       width: 60%
       img
-        width: 100%
         display: block
+    &-slider
+      & .slick-arrow.slick-prev
+        // left: 22.5%
+        &:before
+          width: 10px
+          height: 16px
+      & .slick-arrow.slick-next
+        // right: 22.5%
+        &:before
+          width: 10px
+          height: 16px
+      & .slick-dots
+        bottom: -30px
+        & li button
+          width: 18px
+          height: 18px
+          padding: 0
+      & .slick-arrow
+        width: 45px
+        height: 45px
+  .videoplay
+    width: 60px
+    height: 60px
+    &::before
+      width: 74px
+      height: 74px
+      top: -7px
+      left: -7px
   .footer
     padding-top: 60px
     &-address
@@ -437,6 +549,35 @@
 
   .modal
     & .organization-form-right
-      width: 300px
+      width: 280px
     & .closed
       font-size: 26px
+  .details
+    &-program
+      width: 70%
+    &-btn
+      padding: 14px
+      font-size: 16px
+      margin-left: 30px
+    &-price
+      span
+        font-size: 24px
+    &_input
+      padding: 18px 14px
+      &::placeholder
+        font-size: 14px
+    &-form
+      &__btn
+        font-size: 12px
+  
+  .policy
+    &-title
+      font-size: 20px
+      margin-bottom: 15px
+    &-subtitle
+      font-size: 17px
+      line-height: 21px
+    & .policy-sub-desc
+      font-size: 14px
+    p
+      font-size: 14px

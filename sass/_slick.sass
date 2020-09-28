@@ -1,0 +1,177 @@
+// Слайдер 
+// .slick-slider
+//   // position: relative
+
+// // Слайдер запущен 
+// .slick-slider.slick-initialized
+//   // display: flex
+
+// // Лента слайдов. Отвечает за показ слайдов
+// .slick-track
+//   // display: flex   // Активировать
+
+// // Слайдер с точками 
+// .slick-slider.slick-dotted
+
+// // Ограничивающая оболочка 
+// .slick-list 
+  // overflow: hidden // Активировать
+
+// Лента слайдов
+// .slick-track
+
+// // Слайд 
+// .slick-slide
+
+// // Слайд активный (показывается)
+// .slick-slide.slick-active
+
+// // Слайд основной
+// .slick-slide.slick-current
+
+// // Слайд по центру
+// .slick-slide.slick-center
+
+// // Клонированный слайд
+// .slick-slide.slick-cloned
+
+// Стрелка
+.slick-arrow
+  position: absolute
+  top: 50%
+  transform: translateY(-50%)
+  margin: -15px 0 0 0
+  z-index: 2
+  font-size: 0
+  width: 70px
+  height: 70px
+  border-radius: 50%
+  cursor: pointer
+  border: none
+  outline: none
+  -webkit-box-shadow: inset 0 0 7px rgba(255, 255, 255, 0.2)
+  box-shadow: inset 0 0 7px rgba(255, 255, 255, 0.2)
+  background-repeat: no-repeat
+  background-position: center
+  background-image: -webkit-gradient(linear, left bottom, left top, from(#f46b45), to(#eea849)), -webkit-gradient(linear, left bottom, left top, from(#fdcc72), to(#fbd899))
+  background-image: linear-gradient(to top, #f46b45 0%, #eea849 100%), linear-gradient(to top, #fdcc72 0%, #fbd899 100%)
+  &:hover
+    background: -webkit-gradient(linear, left bottom, left top, from(#ff3700), to(#ffd69f))
+    background: linear-gradient(to top, #ff3700 0%, #ffd69f 100%)
+  
+  
+// Стрелка влево
+.slick-arrow.slick-prev
+  left: -80px
+  &:before
+    content: ''
+    width: 12px
+    height: 22px
+    display: block
+    margin: 0 auto
+    background-size: contain
+    background-image: url(../img/quest-slide/left-arrow.png)
+    background-repeat: no-repeat
+
+
+// Стрелка вправо
+.slick-arrow.slick-next
+  right: -80px
+  &:before
+    content: ''
+    width: 12px
+    height: 22px
+    display: block
+    margin: 0 auto
+    background-size: contain
+    background-repeat: no-repeat
+    background-position: center center
+    background-image: url(../img/quest-slide/right-arrow.png)
+
+.reviews-slider
+  & .slick-arrow
+    position: absolute
+    top: 50%
+    // margin: 7px 0 0 0
+    transform: translateY(-50%)
+    z-index: 2
+    font-size: 0
+    width: 50px
+    height: 50px
+    border-radius: 50%
+    cursor: pointer
+    border: none
+    outline: none
+    -webkit-box-shadow: inset 0 0 7px rgba(255, 255, 255, 0.2)
+    box-shadow: inset 0 0 7px rgba(255, 255, 255, 0.2)
+    background-repeat: no-repeat
+    background-position: center
+    background-image: -webkit-gradient(linear, left bottom, left top, from(#f46b45), to(#eea849)), -webkit-gradient(linear, left bottom, left top, from(#fdcc72), to(#fbd899))
+    background-image: linear-gradient(to top, #f46b45 0%, #eea849 100%), linear-gradient(to top, #fdcc72 0%, #fbd899 100%)
+    &:hover
+      background: -webkit-gradient(linear, left bottom, left top, from(#ff3700), to(#ffd69f))
+      background: linear-gradient(to top, #ff3700 0%, #ffd69f 100%)
+    &.slick-prev
+      left: calc(50% - 24%)
+      &:before
+        content: ''
+        width: 12px
+        height: 18px
+        display: block
+        margin: 0 auto
+        background-size: contain
+        background-image: url(../img/quest-slide/left-arrow.png)
+        background-repeat: no-repeat
+    &.slick-next
+        right: calc(50% - 24%)
+        &:before
+          content: ''
+          width: 12px
+          height: 18px
+          display: block
+          margin: 0 auto
+          background-size: contain
+          background-repeat: no-repeat
+          background-position: center center
+          background-image: url(../img/quest-slide/right-arrow.png)
+  & .slick-track
+    padding-bottom: 30px
+
+// Стрелка не активная
+// .slick-arrow.slick-disabled
+
+// Точки (булиты)
+.slick-dots
+  display: flex
+  align-items: center
+  justify-content: center
+  position: absolute
+  bottom: -50px
+  right: 50%
+  transform: translateX(50%)
+.slick-dots li
+  list-style-type: none
+  font-size: 0
+  margin: 0 15px
+  
+  
+// Активная точка
+.slick-dots li.slick-active button
+  background: linear-gradient(to top, #ff3700 0%, #ffd69f 100%)
+  color: linear-gradient(to top, #ff3700 0%, #ffd69f 100%)
+  border-radius: 50%
+  outline: none
+  
+
+// Элемент точки
+.slick-dots li button
+  font-size: 0
+  width: 20px
+  height: 20px
+  border-radius: 50%
+  padding: 0 10px
+  border: none
+  background: #e8e8e8
+  cursor: pointer
+  &:focus
+    outline: none

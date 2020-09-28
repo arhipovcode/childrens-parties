@@ -28,6 +28,8 @@
         font-size: 30px
     &-request
       font-size: 18px
+      // text-align: center
+      // margin: 25px auto 27px
     &-form
       display: flex
       flex-wrap: wrap
@@ -35,14 +37,16 @@
         margin: 0 auto
         position: relative
         left: 0
-        width: 100%
+        bottom: -25px
+        width: 60%
         padding: 19px 25px
     &-input
       max-width: 100%
-      width: 100%
+      width: 60%
+      padding: 20px 30px
       margin: 0 auto 12px
     &-conditions
-      width: 80%
+      width: 100%
       margin: 0 auto
       text-align: center
   
@@ -61,15 +65,24 @@
       margin-top: 5%
       padding-bottom: 25px
     &-us
-      width: 100%
-      min-width: 95%
+      // width: 80%
+      min-width: 52%
       margin-bottom: 15px
-      &:nth-child(1) .about-item
-        padding: 12px 12px 10px 38%
-      &:nth-child(2) .about-item
-        padding: 17px 12px 10px 38%
-      &:nth-child(3) .about-item
-        padding: 17px 12px 10px 38%
+      &:nth-child(1)
+        & .about-item
+          padding: 12px 12px 10px 38%
+        &:before
+          left: 3%
+      &:nth-child(2)
+        & .about-item
+          padding: 17px 12px 10px 38%
+        &:before
+          left: 13%
+      &:nth-child(3)
+        & .about-item
+          padding: 17px 12px 10px 38%
+        &:before
+          left: 3%
 
   .holiday
     &-title
@@ -115,17 +128,23 @@
 
   .micro-transparent
     display: none
+  .question
+    min-height: 175px
+    &-form
+      width: 100%
+    &-inp
+      width: 100%
 
   .test
     padding-top: 40px
     &-block
-
+      flex-direction: column
       &__left
-        width: 50%
+        width: 100%
         padding: 35px
         border-radius: 10px 0 0 10px
       &__right
-        width: 50%
+        width: 100%
         border-radius: 0 10px 10px 0;
         padding: 30px 40px 30px 40px
       &__desc
@@ -133,6 +152,7 @@
       &__offers
         padding: 8px 0 8px 0
       &__expert
+        justify-content: center
         strong
           line-height: 27px
     &-title
@@ -142,17 +162,37 @@
         font-size: 16px
         margin-bottom: 30px
   .check-btn
-    margin: auto
     display: block
-    width: 100%
+    padding: 15px 0
+    width: 45%
+  .final-btn
+    width: 45%
+  .back-btn
+    width: 45%
+    padding: 15px 0
   .checkbox
     label
       font-size: 15px
     &-block
-      min-width: 55%
+      min-width: 50%
       margin-bottom: 15px
       &:last-child
         margin-bottom: 30px
+      &-cldr
+        width: 100%
+        input
+          width: 45%
+          margin-right: 0
+    &-btns-wrap
+      flex-wrap: wrap
+    &-qw-6
+      width: 100%
+      label
+        justify-content: start
+        width: 100%
+        line-height: 17px
+    &-qw-7
+      width: 100%
   .progress
     margin-bottom: 30px
   .left-block__title
@@ -164,6 +204,12 @@
     font-size: 12px
   .expert__desc
     font-size: 13px
+    width: 80%
+    margin: 17px auto
+    text-align: center
+    &:after
+      left: 50%
+      transform: translateX(-50%) rotate(45deg)
 
   .organization
     padding-top: 30px
@@ -187,7 +233,7 @@
       &-left
         margin: 0 auto
       &-right
-        width: 90%
+        width: 80%
         margin: 0 auto
     &-wrap
       margin-bottom: 30px
@@ -207,6 +253,9 @@
       &__right
         width: 50%
 
+  .modal .organization-form-right
+    margin: 0 auto
+
   .programs
     padding-top: 30px
     padding-bottom: 30px
@@ -219,17 +268,14 @@
       text-align: center
       margin-bottom: 30px
     &-wrap
-      flex-direction: column
       text-align: center
       margin-bottom: 0
     &-inp
-      width: 100%
       margin-bottom: 20px
       &:nth-child(1) .inp-block__wrap,
       &:nth-child(2) .inp-block__wrap,
       &:nth-child(3) .inp-block__wrap
-        width: auto
-        margin-left: 0
+        min-width: 145px
         padding-left: 0
         margin-left: 20px
         margin-right: 20px
@@ -237,7 +283,7 @@
         min-height: 10px
     &-game
       &-block
-        width: 310px
+        width: 40%
     &-form
       padding-top: 30px
       padding-bottom: 30px
@@ -266,8 +312,20 @@
     padding: 14px 25px
     font-size: 13px
 
+  .people-prof
+    &__desc
+      &-prgf
+      &-text
+        font-size: 13px
+        line-height: 19px
+      &__photo
+        min-height: 230px
+
   .block-form
     text-align: center
+    padding: 22px 27px
+    &__btn
+      padding: 15px 10px
     &__title
     &__desc
       width: 90%
@@ -278,13 +336,14 @@
     &-title
       margin-bottom: 30px
   .location-block
-    width: 100%
+    width: 65%
     margin-bottom: 30px
     &__link
       font-size: 12px
       min-height: 50px
       width: 47%
       margin-bottom: 10px
+      justify-content: center
       img
         width: 20px
         margin-right: 9px
@@ -337,3 +396,53 @@
   .footer
     &-phone
       display: block
+  .details
+    &-title
+      font-size: 22px
+      margin-bottom: 15px
+    &-image-block
+      margin-bottom: 20px
+    &-price
+      span
+        font-size: 20px
+    &-btn
+      padding: 13px 10px
+      font-size: 15px
+    &-desc
+      p
+        font-size: 14px
+        line-height: 19px
+    &-form
+      &-title
+        margin: 15px 0 15px 0
+        font-size: 22px
+        span
+          font-size: 26px
+      &-wrap
+        flex-direction: column
+        align-items: center
+      &__btn
+        width: 50%
+    &_input
+      width: 70%
+      padding: 18px 20px
+      margin-right: 0
+  .desc-title
+    font-size: 22px
+  .policy
+    padding: 30px 40px
+    &-closed
+      font-size: 26px
+      top: 15px
+      right: 17px
+    &-title
+      font-size: 18px
+      margin-bottom: 12px
+    &-subtitle
+      font-size: 15px
+      line-height: 18px
+      margin-bottom: 15px
+    & .policy-sub-desc
+      font-size: 14px
+    p
+      font-size: 14px

@@ -37,14 +37,17 @@
       font-size: 24px
     &-input
       font-size: 17px
+      padding: 21px 31px
     &-form__btn
       top: 0
       left: 76%
       padding: 23px 30px
+      top: 50%
+      transform: translateY(-50%)
     &-conditions
       opacity: 0.8
   .about
-    padding-top: 20px
+    padding-top: 50px
     &-wrap
       padding-bottom: 100px
     &:before
@@ -72,7 +75,7 @@
       font-size: 15px
 
   .holiday
-    padding-bottom: 70px
+    padding-bottom: 50px
     &-title
       width: 70%
       margin: 0 auto 40px
@@ -107,6 +110,7 @@
 
   .test
     padding-top: 55px
+    padding-bottom: 80px
     &-title
       span
         font-size: 40px
@@ -116,13 +120,65 @@
       width: 90%
       &__left
         width: 55%
+        padding-top: 53px
+        padding-bottom: 0
       &__right
         width: 45%
+      &__desc
+        font-size: 70px
+        margin-top: 5px
+        margin-bottom: 5px
+  .expert__desc
+    font-size: 15px
   .micro-transparent
     left: -80px
+  .left-block__title
+    font-size: 24px
+  .checkbox-block
+    margin-bottom: 30px
+    &:last-child
+      margin-bottom: 40px
+  .question
+    min-height: 285px
+  .check-btn
+    padding: 21px 50px
+    font-size: 17px
+  .back-btn
+    padding: 20px 50px
+    font-size: 16px
+  .final-btn
+    padding: 21px 8px
+  .checkbox-block-cldr
+    display: flex
+    justify-content: space-between
+    & input
+      width: 50%
+      padding: 20px 12px 18px 50px
+      &::placeholder
+        font-size: 16px
+  .checkbox
+    & label
+      font-size: 14.5px
+  .checkbox-lbl-wrap:last-child
+    margin-bottom: 30px
+
+  label
+    &:before
+      width: 28px
+      height: 28px
+    &:after
+      width: 12px
+      height: 12px
+
+  .question-inp
+    padding: 22px 25px
+    &::placeholder
+      font-size: 16px
+    &:last-child
+      margin-bottom: 0
 
   .organization
-    padding-top: 80px
+    padding-top: 70px
     overflow: hidden
     &-title
       max-width: 65%
@@ -172,7 +228,7 @@
       margin-bottom: 15px
     &__btn
       margin-top: 5px
-      padding: 21px 57px
+      padding: 21px 25px
       width: 100%
 
   .programs
@@ -222,13 +278,22 @@
     padding: 20px 50px
   .inp-title
     font-size: 18px
-    min-height: 50px
+    min-height: 45px
     margin-bottom: 0
   .inp-block
+    min-height: 70px
     input
       margin-right: 15px
     &__wrap
-      font-size: 16px
+      font-size: 14px
+      line-height: 10px
+
+  .programs-inp:first-child
+    margin-right: 70px
+
+  .people-slider-nav__item
+    min-height: 355px
+  
   .refresh-btn
     font-size: 15px
     padding: 20px 35px
@@ -321,15 +386,25 @@
         margin-bottom: 25px
       &-text
         font-size: 15px
+    &-slider
+      & .slick-arrow
+        width: 50px
+        height: 50px
+        &.slick-prev,
+          left: -50px
+        &.slick-next
+          right: -50px
+
   .people-slider-nav
     padding-bottom: 50px
     &__item img
-      width: 219px
-      height: 209px
     &__item-name
       font-size: 21px
   .nav-item__desc
-    font-size: 17px
+    font-size: 16px
+    line-height: 22px
+  .slider-nav-block
+    min-height: 320px
 
   .reviews
     &-title
@@ -356,3 +431,45 @@
     &-address
       img
         margin-right: 15px
+  .details
+    &-program
+    &-title
+      margin-bottom: 20px
+    &-btn
+      padding: 16px 18px
+      margin-left: 40px
+    &-price
+      span
+        font-size: 26px
+    &-desc
+      p
+        font-size: 16px
+        line-height: 21px
+    &-form
+      &-wrap
+        align-items: baseline
+      &-title
+        margin: 20px 0 15px 0
+        font-size: 26px
+        span
+          font-size: 32px
+      &__btn
+        width: auto
+        font-size: 15px
+        padding: 20px
+    &_input
+      font-size: 16px
+      padding: 20px 15px
+  .desc-title
+    font-size: 27px
+  .policy
+    &-title
+      font-size: 24px
+      margin-bottom: 24px
+    &-subtitle
+      font-size: 18px
+      line-height: 24px
+    & .policy-sub-desc
+      font-size: 16px
+    p
+      font-size: 15px

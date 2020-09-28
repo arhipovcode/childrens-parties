@@ -143,6 +143,7 @@
   background: linear-gradient(to top, #f46b45 0%, #eea849 100%)
   -webkit-background-clip: text
   background-clip: text
+  transition: all 1s
   +painter
   color: $primary-text
 
@@ -151,6 +152,7 @@
   border-radius: 15px
   background-color: #f6f6f6
   position: relative
+  z-index: -5
   &-line
     background-color: #b2c871
     height: 100%
@@ -159,17 +161,23 @@
     border-radius: 15px
     left: 0
     background-image: repeating-linear-gradient(-55deg, transparent, transparent 6px, #ccdba2 5px, #ccdba2 10px), linear-gradient(to top, rgba(183, 203, 123, 0.9) 0%, rgba(167, 191, 92, 0.9) 100%)
+    z-index: -2
+    transition: all 1s
   &-text
-    color: #bbbbbb
+    color: #848484
     font-size: 12px
     font-weight: 500
     padding: 8px 0
     text-align: center
+    z-index: 5
 
 .checkbox
   &-wrap
     display: flex
     flex-wrap: wrap
+    align-items: baseline
+  &-qw-6
+    width: 50%
   &-block
     display: flex
     align-items: baseline
@@ -177,7 +185,115 @@
     min-width: 42%
     &:last-child
       margin-bottom: 49px
+    &-cldr
+      input
+        border: 1px solid #cccccc
+        border-radius: 10px
+        outline: none
+        padding: 20px 25px 18px 62px
+        margin-right: 20px
+        background: url(../img/test/calendar.png) no-repeat top 13px left 20px
+        &::placeholder
+          color: #cccccc
+          font-size: 20px
+          +light
   label
-    margin-left: 11px
     font-size: 16px
-    +thin
+    +light
+
+.question_2, .question_5
+  .checkbox-block
+    width: 100%
+.checkbox-lbl-wrap
+  width: 100%
+  display: flex
+  align-items: center
+  margin-bottom: 20px
+  &:last-child
+    margin-bottom: 49px
+
+.question-inp
+  background-color: #f1f1f1
+  margin-bottom: 20px
+  width: 261px
+  outline: none
+  border: none
+  padding: 27px 31px
+  border-radius: 10px
+  &::placeholder
+    font-size: 20px
+    +light
+
+.final-btn
+  width: 261px
+  font-size: 18px
+  padding: 25px 10px
+  margin-bottom: 20px
+  display: none
+  text-transform: uppercase
+.back-btn
+  text-transform: uppercase
+  padding: 23px 52px
+  margin-left: 25px
+  outline: none
+  border-radius: 50px
+  font-size: 18px
+  border: 1px solid #bebebe
+  background-color: #fff
+  box-shadow: 0 6px 20px 1px rgba(225,225, 225, 0.8)
+  background: transparent
+  color: #bebebe
+  transition: 0.2s
+  display: none
+  +bold
+  &:hover
+    cursor: pointer
+    box-shadow: none
+    background-color: #f1f1f1
+    border: 1px solid #f1f1f1
+
+.checkbox-block-cldr
+  & .input-to
+    margin-right: 0
+
+.checkbox-qw-7:last-child
+  margin-bottom: 10px
+
+.question_8-check_mark
+  width: 170px
+  height: 170px
+  margin: 0 auto 40px
+  background: linear-gradient(to top, #f46b45 0%, #eea849 100%)
+  border-radius: 50%
+  display: flex
+  align-items: center
+  justify-content: center
+  position: relative
+  &:before
+    content: ''
+    display: block
+    position: absolute
+    width: 80px
+    height: 90px
+    background-image: url(../img/test/check-mark.png)
+    background-repeat: no-repeat
+    background-size: contain
+.question_8-title
+  margin-bottom: 15px
+  font-size: 32px
+  max-width: 260px
+  margin: 0 auto 10px
+  +bold
+.question_8-desc
+  font-size: 18px
+  max-width: 260px
+  margin: 0 auto
+  +light
+.question-final-mark
+  text-align: center
+
+.question-content
+  display: none
+
+.question
+  min-height: 300px

@@ -1,4 +1,7 @@
 @media (max-width: 670px)
+  .header
+    &-input
+      padding: 15px 25px
   .location
     &-tabs
     &-image
@@ -7,7 +10,7 @@
       margin-left: 0
       width: 100%
       &-paragraph
-        width: 80%
+        width: 95%
       &__btn
         width: fit-content
     &-block__link
@@ -20,7 +23,6 @@
     &-title__discount
       max-width: 450px
     &-block
-      flex-direction: column
       &__offers
         max-width: 220px
         min-height: 46px
@@ -32,7 +34,6 @@
           top: -20px
           left: -50px
       &__expert
-        justify-content: center
       &__left
         width: 100%
         border-radius: 10px 10px 0 0
@@ -44,6 +45,8 @@
     &-form
       &:after
         display: none
+      &-right
+        width: 90%
 
   .block-circle
     width: 33px
@@ -54,15 +57,34 @@
   .checkbox-wrap
     justify-content: flex-start
   .checkbox-block
-    padding-left: 40px
+    padding-left: 0
 
   .expert__desc
-    width: 80%
-    margin: 17px auto
-    text-align: center
-    &:after
-      left: 50%
-      transform: translateX(-50%) rotate(45deg)
+    // width: 80%
+    // margin: 17px auto
+    // text-align: center
+    // &:after
+    //   left: 50%
+    //   transform: translateX(-50%) rotate(45deg)
+  .slider-certificates 
+    & .slick-arrow
+      width: 40px
+      height: 40px
+      &.slick-prev
+        left: 10px
+      &.slick-next
+        right: 10px
+    & .slick-dots
+      bottom: -30px
+      & li button
+        padding: 0
+        width: 16px
+        height: 16px
+  .certificate
+    &-block
+      &-image
+        width: 60%
+        max-height: 480px
 
   .offer__text
     width: 65%
@@ -71,12 +93,21 @@
     &-images
       flex-direction: column-reverse
     &-text
-      width: 100%
+      width: 65%
     &-left
       width: 100%
+      justify-content: space-around
+      img
+        width: 40%
     &-right
       width: 80%
       margin-bottom: 25px
+  .videoplay
+    width: 40px
+    height: 40px
+    &:before
+      width: 54px
+      height: 54px
 
   .pagination__left-btn
     margin-right: 20px
@@ -85,28 +116,86 @@
   .pagination__item
     margin-left: 5px
     margin-right: 5px
+  .pagination_arrow
+    width: 40px
+    height: 40px
 
   .people-prof
     &__photo
-      width: 60%
+      min-height: 38vw
     &__desc
-      width: 100%
-      margin: -20px auto
       &-name
-        margin-top: 0
       &-inside
-        padding: 20px 20px 20px 30px
       &-text
-        max-width: 100%
-        line-height: 20px
       &-prgf
-        margin-bottom: 12px
     &-slider
-      flex-direction: column
       & .pagination__left-btn
         display: none
       & .pagination__right-btn
         display: none
+  .slider-nav-block
+    width: 87%
+    min-height: auto
+  .reviews-slider .slick-arrow.slick-prev
+    left: calc(50% - 43%)
+  .reviews-slider .slick-arrow.slick-next
+    right: calc(50% - 43%)
+  .reviews-slider .slick-arrow
+    width: 40px
+    height: 40px
+  .reviews-wrapper-btn
+    margin-bottom: 30px
+  #myMap
+    height: 280px
+  .programs
+    &-title
+    &-desc
+    &-wrap
+      flex-direction: column
+    &-inp
+      width: 100%
+      margin-bottom: 15px
+      &:nth-child(1) .inp-block__wrap,
+      &:nth-child(2) .inp-block__wrap,
+      &:nth-child(3) .inp-block__wrap
+        min-width: auto
+        margin-left: 0
+        margin-right: 0
+  .inp-block
+    justify-content: space-between
+    min-height: auto
+  .inp-title
+    font-size: 15px
+
+  .people-slider-nav
+    & .slick-dots
+      bottom: 30px
+    & li
+      margin: 0 7px
+      & button
+        width: 12px
+        height: 12px
+        padding: 0
+    &__item
+      min-height: auto
+      &-name
+        display: none
+  .nav-item__desc
+    display: none
+  .people-prof-slider
+    & .slick-arrow
+      width: 35px
+      height: 35px
+      &.slick-prev
+        left: -30px
+        &:before
+          height: 15px
+          width: 10px
+      &.slick-next
+        right: -30px
+        &:before
+          height: 15px
+          width: 10px
 
   .footer
     &-title
@@ -143,9 +232,41 @@
       font-size: 14px
       img
         margin-right: 20px
-
-@media (max-width: 450px)
-  .expert__desc
-    width: 100%
-  .test-block__right
-    padding-bottom: 20px
+  .details
+    &-program
+      width: 80%
+      padding: 30px 40px
+    &-price
+      span
+        font-size: 18px
+    &-btn
+      padding: 13px 10px
+      font-size: 13px
+      margin-left: 10px
+    &_input
+      width: 70%
+    &-form
+      &__btn
+        width: 70%
+    &__offer
+      width: 70%
+      margin: 10px auto
+      text-align: center
+  .policy
+    width: 90%
+    padding: 20px 25px
+    &-closed
+      font-size: 24px
+      top: 12px
+      right: 14px
+    &-title
+      font-size: 17px
+      margin-bottom: 10px
+    &-subtitle
+      font-size: 14px
+      line-height: 17px
+      margin-bottom: 10px
+    & .policy-sub-desc
+      font-size: 13px
+    p
+      font-size: 13px

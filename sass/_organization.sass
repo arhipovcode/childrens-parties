@@ -111,7 +111,8 @@
     font-size: 12px
     opacity: 0.5
     text-align: center
-    margin-top: 10px
+    margin: 10px auto
+    width: 85%
   &__inp
     border-radius: 10px
     background-color: #f1f1f1
@@ -119,6 +120,13 @@
     padding: 23px 31px
     margin-bottom: 20px
     font-size: 20px
+    outline: none
+    border: none
+    padding: 27px 31px
+    border-radius: 10px
+    &::placeholder
+      color: $text-color
+      +regular
   &__btn
     padding: 30px 57px 30px 57px
     text-transform: uppercase

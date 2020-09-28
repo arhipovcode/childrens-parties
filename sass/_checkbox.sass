@@ -1,0 +1,87 @@
+input[type="checkbox"]
+  display: none
+  &:checked + label::before
+    background: linear-gradient(to top, rgba(244, 107, 69, 1) 0%, rgba(238, 168, 73, 1) 100%)
+  &:checked + label::after
+    transform: scale(1)
+label
+  padding-left: 35px
+  cursor: pointer
+  position: relative
+  &:before
+    content: ''
+    display: inline-block
+    width: 30px
+    height: 30px
+    background-color: #f0f0f0
+    border-radius: 50%
+    vertical-align: middle
+    margin-left: -35px
+    margin-right: 10px
+    z-index: 1
+    transition: all 0.3s
+  &:after
+    content: ''
+    display: block
+    width: 14px
+    height: 14px
+    position: absolute
+    background-color: #fff
+    border-radius: 50%
+    z-index: 2
+    top: 8px
+    left: 8px
+    transform: scale(0)
+    transition: all 0.3s
+
+
+.checkbox-qw-6
+  align-items: center
+  label
+    display: flex
+    align-items: center
+    justify-content: space-between
+    padding-left: 0
+    width: 90%
+    &:before,
+    &:after
+      display: none
+
+.checked-span
+  display: block
+  position: relative
+  flex-shrink: 0
+  margin-right: 12px
+  width: 30px
+  height: 30px
+  background-color: #f0f0f0
+  border-radius: 50%
+  z-index: 1
+  transition: all 0.3s
+  &:after
+    content: ''
+    display: block
+    width: 14px
+    height: 14px
+    position: absolute
+    background-color: #fff
+    border-radius: 50%
+    z-index: 2
+    top: 8px
+    left: 8px
+    transform: scale(0)
+    transition: all 0.3s
+
+input[type="checkbox"]:checked + label
+  & .checked-span
+    background: linear-gradient(to top, rgba(244, 107, 69, 1) 0%, rgba(238, 168, 73, 1) 100%)
+    &:after
+      transform: scale(1)
+
+.checkbox-btns-wrap
+  display: flex
+  align-items: baseline
+.checkbox-qw-7
+  margin-bottom: 20px
+.checkbox-conditions
+  display: none

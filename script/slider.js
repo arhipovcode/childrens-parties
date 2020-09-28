@@ -5,9 +5,16 @@ let slideIndex = 1,
     arrowLeft = document.querySelector('.pagination__left-btn'),
     arrowRight = document.querySelector('.pagination__right-btn'),
     paginationWrap = document.querySelector('.quest-slide-pagination'),
-    pagItems = document.querySelectorAll('.pagination__item-dots');
+    pagItems = document.querySelectorAll('.pagination__item-dots'),
+    peopleCart = document.querySelectorAll('.people-prof-cart'),
+
+    peopleBtnLeft = document.querySelector('.people-left'),
+    peopleBtnRight = document.querySelector('.people-right'),
+    peopleSlider = document.querySelectorAll('.people-prof-cart'),
+    peopleSlideNavigation = document.querySelector('.people-slider-nav');
 
 showSlides(slideIndex);
+// showPeople(slideIndex);
 
 function showSlides(n) {
   if (n > slides.length) {

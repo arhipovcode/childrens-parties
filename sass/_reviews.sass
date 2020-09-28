@@ -1,4 +1,8 @@
 .reviews
+  & .slick-slide
+    opacity: 0.5
+  & .slick-active
+    opacity: 1
   &-title
     text-align: center
     max-width: 710px
@@ -14,25 +18,127 @@
     align-items: center
     margin-bottom: 70px
   &-btn
+    position: relative
     margin-left: 10px
     margin-right: 10px
     font-size: 20px
     padding: 20px 21px
     border: none
+    overflow: hidden
     outline: none
     box-shadow: 0 6px 20px 1px rgba(61, 61, 61, 0.06)
     background-color: #ffffff
     border-radius: 10px
+    z-index: 1
     transition: 0.3s
+    &:hover
+      cursor: pointer
+      color: #fff
+      &:before
+        width: 100%
+        left: 0
     &_active
       color: #fff
       cursor: pointer
       box-shadow: 0 6px 10px 1px rgba(242, 127, 86, 0.2)
       background-color: #e8e8e8
       background-image: linear-gradient(to top, rgba(244, 107, 69, 0.9) 0%, rgba(238, 168, 73, 0.9) 100%)
-    &:hover
-      cursor: pointer
+      z-index: 1
+    &:before
+      content: ""
+      position: absolute
+      right: 0
+      top: 0
+      width: 0
+      height: 100%
+      border-radius: 10px
+      background-color: #e8e8e8
+      -webkit-transition: all 0.7s
+      transition: all 0.7s
+      z-index: -1
+      background-image: -webkit-gradient(linear, left bottom, left top, from(rgba(244, 107, 69, 0.9)), to(rgba(238, 168, 73, 0.9)))
+      background-image: linear-gradient(to top, rgba(244, 107, 69, 0.9) 0%, rgba(238, 168, 73, 0.9) 100%)
+      
   &-slider
     display: flex
     justify-content: center
     align-items: center
+    position: relative
+    &-photo
+      position: relative
+      padding: 10px
+      box-shadow: 0 10px 20px 1px rgba(61, 61, 61, 0.1)
+      border-radius: 10px
+      background-color: #ffffff
+      margin: 0 40px
+      outline: none
+      & img
+        display: block
+        width: 100%
+
+.videoplay
+  content: ''
+  display: none
+  position: absolute
+  width: 70px
+  height: 70px
+  border-radius: 50%
+  background-image: linear-gradient(to top, #f46b45 0%, #eea849 100%), linear-gradient(to top, #fdcc72 0%, #fbd899 100%)
+  cursor: pointer
+  top: 50%
+  left: 50%
+  transform: translate(-50%, -50%)
+  transition: 0.3s
+  &:hover
+    transform: translate(-50%, -50%) scale(1.02)
+    &:before
+      opacity: 0.5
+  img
+    width: auto
+    position: absolute
+    top: 50%
+    left: 50%
+    transform: translate(-50%, -50%)
+  &:before
+    content: ''
+    display: block
+    position: absolute
+    width: 84px
+    height: 84px
+    top: -7px
+    left: -7px
+    border-radius: 50%
+    border: 1px solid #ff9000
+
+.reviews-slider .slick-active .videoplay
+  display: block
+
+.reviews-certificates
+  max-width: 360px
+  margin: 0 auto
+  border-radius: 10px
+.certificate-block
+  outline: none
+  
+  padding-bottom: 28px
+  &-image
+    border-radius: 10px
+    width: 80%
+    margin: 0 auto
+    overflow: hidden
+    box-shadow: 0 10px 20px 1px rgba(61, 61, 61, 0.2)
+    max-height: 509px
+  & img
+    width: 100%
+    display: block
+    border-radius: 10px
+.slider-certificates
+  display: none
+  & .slick-prev,
+  & .slick-next
+    width: 50px
+    height: 50px
+  & .slick-arrow.slick-prev:before
+    height: 18px
+  & .slick-arrow.slick-next:before
+    height: 18px
