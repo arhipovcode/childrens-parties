@@ -3815,7 +3815,7 @@ body {
     margin-left: 10px;
   }
   .header-title {
-    max-width: 90%;
+    max-width: 100%;
   }
   .header-title span {
     font-size: 32px;
@@ -3839,6 +3839,9 @@ body {
   .header-form__btn {
     left: 71%;
     padding: 21px 23px;
+  }
+  .content-left {
+    width: 72%;
   }
   .question {
     min-height: 250px;
