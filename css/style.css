@@ -3020,51 +3020,10 @@ input[type="checkbox"]:checked + label .checked-span:after {
   outline: none;
 }
 
-* {
-  margin: 0;
-  padding: 0;
-}
-
-*,
-*:after,
-*:before {
-  -webkit-box-sizing: border-box;
-          box-sizing: border-box;
-}
-
-a {
-  text-decoration: none;
-  color: #303030;
-  -webkit-transition: 0.5s;
-  transition: 0.5s;
-}
-
-body {
-  color: #303030;
-  font-family: 'MADE Evolve Sans', sans-serif;
-}
-
-.container {
-  margin: 0 auto;
-  max-width: 1170px;
-}
-
-.title {
-  font-size: 46px;
-  font-weight: 500;
-  line-height: 56px;
-  font-family: 'MADE Evolve Sans Medium', sans-serif;
-}
-
-#myMap {
-  width: 100%;
-  border: none;
-}
-
 .scroll-up {
   position: fixed;
-  right: 50px;
-  bottom: 50px;
+  right: 10px;
+  bottom: 10px;
   z-index: 1000;
   width: 50px;
   height: 50px;
@@ -3119,6 +3078,47 @@ body {
   opacity: 1;
   -webkit-transform: translateY(0);
           transform: translateY(0);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*:after,
+*:before {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #303030;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+body {
+  color: #303030;
+  font-family: 'MADE Evolve Sans', sans-serif;
+}
+
+.container {
+  margin: 0 auto;
+  max-width: 1170px;
+}
+
+.title {
+  font-size: 46px;
+  font-weight: 500;
+  line-height: 56px;
+  font-family: 'MADE Evolve Sans Medium', sans-serif;
+}
+
+#myMap {
+  width: 100%;
+  border: none;
 }
 
 @media (max-width: 1170px) {
