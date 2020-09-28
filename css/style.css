@@ -5178,6 +5178,7 @@ body {
     width: -webkit-fit-content;
     width: -moz-fit-content;
     width: fit-content;
+    width: auto;
   }
   .location-block__link {
     min-height: 40px;
