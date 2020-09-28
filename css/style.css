@@ -2185,6 +2185,7 @@
 .reviews-slider-photo img {
   display: block;
   width: 100%;
+  height: intrinsic;
 }
 
 .videoplay {
@@ -4425,7 +4426,6 @@ body {
   }
   .reviews-slider-photo img {
     display: block;
-    height: intrinsic;
   }
   .reviews-slider .slick-arrow.slick-prev:before {
     width: 10px;
