@@ -21,6 +21,7 @@
     &-title
       font-size: 21px
       line-height: 27px
+      max-width: 80%
       p
         line-height: 22px
         font-size: 17px
@@ -49,7 +50,8 @@
       width: 100%
       margin: 0 auto
       text-align: center
-  
+  .duration-holiday
+    line-height: 30px
   .content-left
     width: 100%
   .content-right
@@ -150,7 +152,10 @@
       &__desc
         margin: 10px 0
       &__offers
-        padding: 8px 0 8px 0
+        padding: 8px 0 8px 25px
+        img
+          top: -25px
+          left: -35px
       &__expert
         justify-content: center
         strong
@@ -204,7 +209,7 @@
     font-size: 12px
   .expert__desc
     font-size: 13px
-    width: 80%
+    max-width: 350px
     margin: 17px auto
     text-align: center
     &:after
@@ -233,7 +238,7 @@
       &-left
         margin: 0 auto
       &-right
-        width: 80%
+        // width: 80%
         margin: 0 auto
     &-wrap
       margin-bottom: 30px
@@ -253,7 +258,8 @@
       &__right
         width: 50%
 
-  .modal .organization-form-right
+  .modal .organization-form-right,
+  .programs-form .organization-form-right
     margin: 0 auto
 
   .programs
@@ -312,7 +318,12 @@
   .refresh-btn
     padding: 14px 25px
     font-size: 13px
-
+  .videoplay
+    width: 56px
+    height: 56px
+    &:before
+      width: 70px
+      height: 70px
   .people-prof
     &__desc
       &-prgf
@@ -324,7 +335,7 @@
 
   .block-form
     text-align: center
-    padding: 22px 27px
+    padding: 22px 24px
     &__btn
       padding: 15px 10px
     &__title
@@ -382,7 +393,7 @@
       text-align: center
       margin: 0 auto 20px
     &-text
-      width: 80%
+      width: 65%
       padding: 5px
     &__descr
       padding: 5px 5px 5px 0

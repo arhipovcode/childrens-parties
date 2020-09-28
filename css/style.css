@@ -4619,6 +4619,7 @@ body {
   .header-title {
     font-size: 21px;
     line-height: 27px;
+    max-width: 80%;
   }
   .header-title p {
     line-height: 22px;
@@ -4655,6 +4656,9 @@ body {
     width: 100%;
     margin: 0 auto;
     text-align: center;
+  }
+  .duration-holiday {
+    line-height: 30px;
   }
   .content-left {
     width: 100%;
@@ -4785,7 +4789,11 @@ body {
     margin: 10px 0;
   }
   .test-block__offers {
-    padding: 8px 0 8px 0;
+    padding: 8px 0 8px 25px;
+  }
+  .test-block__offers img {
+    top: -25px;
+    left: -35px;
   }
   .test-block__expert {
     -webkit-box-pack: center;
@@ -4864,7 +4872,7 @@ body {
   }
   .expert__desc {
     font-size: 13px;
-    width: 80%;
+    max-width: 350px;
     margin: 17px auto;
     text-align: center;
   }
@@ -4906,7 +4914,6 @@ body {
     margin: 0 auto;
   }
   .organization-form-right {
-    width: 80%;
     margin: 0 auto;
   }
   .organization-wrap {
@@ -4932,7 +4939,8 @@ body {
   .organization-block__right {
     width: 50%;
   }
-  .modal .organization-form-right {
+  .modal .organization-form-right,
+  .programs-form .organization-form-right {
     margin: 0 auto;
   }
   .programs {
@@ -5012,6 +5020,14 @@ body {
     padding: 14px 25px;
     font-size: 13px;
   }
+  .videoplay {
+    width: 56px;
+    height: 56px;
+  }
+  .videoplay:before {
+    width: 70px;
+    height: 70px;
+  }
   .people-prof__desc-text {
     font-size: 13px;
     line-height: 19px;
@@ -5021,7 +5037,7 @@ body {
   }
   .block-form {
     text-align: center;
-    padding: 22px 27px;
+    padding: 22px 24px;
   }
   .block-form__btn {
     padding: 15px 10px;
@@ -5100,7 +5116,7 @@ body {
     margin: 0 auto 20px;
   }
   .quest-slide-text {
-    width: 80%;
+    width: 65%;
     padding: 5px;
   }
   .quest-slide__descr {
