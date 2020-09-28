@@ -377,6 +377,7 @@
 .conditions__link {
   color: #ff9000;
   position: relative;
+  display: inline-block;
   -webkit-transition: 0.2s;
   transition: 0.2s;
 }
@@ -492,7 +493,7 @@
 }
 
 .about-us:nth-child(2) .about-item {
-  padding: 25px 25px 17px 116px;
+  padding: 25px 18px 17px 116px;
 }
 
 .about-us:nth-child(3)::before {
@@ -1477,6 +1478,10 @@
   top: 60px;
 }
 
+.programs-form .organization-form-right {
+  margin-left: 120px;
+}
+
 .bright_holiday {
   padding-bottom: 100px;
 }
@@ -2389,18 +2394,6 @@
 .footer-developer-lnk {
   max-width: 230px;
   text-align: right;
-}
-
-.footer-developer-lnk a {
-  color: #ff9000;
-  border-bottom: 1px solid #ff9000;
-  -webkit-transition: 0.3s;
-  transition: 0.3s;
-}
-
-.footer-developer-lnk a:hover {
-  color: #303030;
-  border-bottom: 1px solid #303030;
 }
 
 .mail-title {
@@ -4099,7 +4092,7 @@ body {
     font-size: 15px;
   }
   .block-form {
-    padding: 22px 30px 22px 30px;
+    padding: 22px 24px 22px 24px;
   }
   .block-form__title {
     font-size: 19px;
