@@ -5584,6 +5584,19 @@ body {
 }
 
 @media (max-width: 480px) {
+  .header-logo {
+    width: 45%;
+  }
+  .header-logo img {
+    width: 90%;
+  }
+  .header-phone {
+    width: 55%;
+    margin-left: 10px;
+  }
+  .header-phone .phone {
+    font-size: 16px;
+  }
   .header-input {
     width: 75%;
   }
