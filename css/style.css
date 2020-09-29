@@ -4041,7 +4041,7 @@ body {
     font-size: 13px;
   }
   .expert__text {
-    font-size: 13px;
+    font-size: 14px;
   }
   .expert__desc {
     margin-top: 17px;
@@ -4122,7 +4122,7 @@ body {
     font-size: 25px;
   }
   .block-form__desc {
-    font-size: 13px;
+    font-size: 15px;
     margin-bottom: 25px;
   }
   .block-form__inp {
@@ -4665,9 +4665,6 @@ body {
   .content-right {
     display: none;
   }
-  .about-text {
-    font-size: 14px;
-  }
   .about-wrap {
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
@@ -4747,7 +4744,6 @@ body {
   }
   .item-text {
     width: 88%;
-    font-size: 14px;
     margin: 0 auto;
   }
   .micro-transparent {
@@ -4817,7 +4813,7 @@ body {
     margin: auto;
   }
   .test-title__discount {
-    font-size: 16px;
+    font-size: 17px;
     margin-bottom: 30px;
   }
   .check-btn {
@@ -4880,11 +4876,9 @@ body {
     margin-bottom: 18px;
   }
   .offer__text {
+    font-size: 14px;
     text-align: center;
     width: 85%;
-  }
-  .expert__text {
-    font-size: 12px;
   }
   .expert__desc {
     font-size: 13px;
@@ -4916,7 +4910,6 @@ body {
     font-size: 20px;
   }
   .organization-form__desc {
-    font-size: 15px;
     text-align: center;
     width: 95%;
     margin: 0 auto;
@@ -4936,7 +4929,7 @@ body {
     margin-bottom: 30px;
   }
   .organization__text {
-    font-size: 13px;
+    font-size: 14px;
   }
   .organization-block {
     margin-bottom: 17px;
@@ -4969,7 +4962,7 @@ body {
     width: 90%;
   }
   .programs-desc {
-    font-size: 15px;
+    font-size: 16px;
     text-align: center;
     margin-bottom: 30px;
   }
@@ -5059,7 +5052,7 @@ body {
     padding: 15px 10px;
   }
   .block-form__desc {
-    width: 90%;
+    width: 100%;
     margin: 0 auto 18px;
   }
   .bright_holiday {
@@ -5294,6 +5287,7 @@ body {
   }
   .organization-form-right {
     width: 70%;
+    max-width: 290px;
   }
   .block-circle {
     width: 33px;
@@ -5437,7 +5431,7 @@ body {
     min-height: auto;
   }
   .inp-title {
-    font-size: 15px;
+    font-size: 16px;
   }
   .people-slider-nav .slick-dots {
     bottom: 30px;
@@ -5681,6 +5675,12 @@ body {
   .test-title span {
     display: block;
   }
+  .test-block__expert img {
+    margin-right: 10px;
+  }
+  .expert__text {
+    font-size: 13px;
+  }
   .progress {
     margin-bottom: 17px;
   }
@@ -5803,8 +5803,12 @@ body {
     font-size: 12px;
   }
   .expert__desc {
-    font-size: 12px;
+    font-size: 13px;
     padding: 10px 8px;
+  }
+  .organization-form-right {
+    width: auto;
+    max-width: 280px;
   }
   .inp-block label:before {
     width: 18px;
