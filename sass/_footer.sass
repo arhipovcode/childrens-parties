@@ -57,6 +57,28 @@
   &-developer-lnk
     max-width: 230px
     text-align: right
+  &_link
+    color: $primary-text
+    position: relative
+    display: inline-block
+    transition: 0.2s
+    &:before
+      content: ''
+      display: block
+      position: absolute
+      left: 0
+      right: 0
+      bottom: -2px
+      width: 100%
+      height: 1px
+      background-color: $primary-text
+      transform: scaleX(1)
+      transition: 0.3s
+    &:hover
+      color: $text-color
+      &:before
+        transform: scaleX(0.7)
+        background-color: $text-color
 .mail-title
   margin-top: 49px
 .footer-mail
