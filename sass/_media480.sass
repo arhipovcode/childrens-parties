@@ -1,23 +1,35 @@
 @media (max-width: 480px)
   .header
     &-logo
-      width: 45%
+      width: 40%
       img
         width: 90%
+    &-title
+      max-width: 90%
     &-phone
-      width: 55%
+      justify-content: space-between
+      width: 60%
       margin-left: 10px
       & .phone
-        font-size: 16px
+        font-size: 15px
+        margin-right: 0
+    &-request
+      max-width: 90%
     &-input
       width: 75%
     &-form
       &__btn
         width: 75%
     &-conditions
-      width: 80%
+      width: 70%
     &-btn__phone
       padding: 12px
+  .duration-holiday
+    font-size: 21px
+    line-height: 26px
+  .holiday
+    &-title
+      width: 100%
   .people
     &-prof
       &-cart
@@ -58,14 +70,17 @@
     min-width: 100%
   .test
     &-block__left
-      padding: 20px 25px
+      padding: 30px 30px 15px 30px
+    &-title
+      span
+        display: block
   .progress
     margin-bottom: 17px
     &-text
       padding: 2px 0
   .left-block__title
     font-size: 16px
-    margin-bottom: 16px
+    margin-bottom: 20px
   .checkbox
     label
       font-size: 14px
@@ -115,6 +130,7 @@
     img
       width: 20px
   .block-form
+    padding: 22px
     &__btn
       padding: 14px 10px
     &__inp
@@ -128,7 +144,10 @@
       top: 5px
       left: 5px
   .question
-    min-height: 165px
+    &_2
+      min-height: 145px
+    &_5
+      min-height: 160px
     &-inp
       padding: 12px 18px
       margin-bottom: 10px
@@ -165,6 +184,7 @@
         justify-content: end
     &-information__btn
       padding: 12px 30px
+      min-width: 250px
   .quest
     &-slide
       &-text

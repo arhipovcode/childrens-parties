@@ -10,5 +10,5 @@ $(".js-range-slider_two").ionRangeSlider({
   min: 0,
   max: 20000,
   from: 0,
-  to: 1000,
+  to: 5000,
 });
