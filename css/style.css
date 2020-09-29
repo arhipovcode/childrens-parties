@@ -2691,6 +2691,7 @@ label {
 
 label:before {
   content: '';
+  position: absolute;
   display: inline-block;
   width: 30px;
   height: 30px;
@@ -4752,7 +4753,19 @@ body {
   .micro-transparent {
     display: none;
   }
-  .question {
+  .question_1 {
+    min-height: 175px;
+  }
+  .question_2 {
+    min-height: 138px;
+  }
+  .question_3 {
+    min-height: 185px;
+  }
+  .question_4 {
+    min-height: 170px;
+  }
+  .question_5 {
     min-height: 175px;
   }
   .question-form {
@@ -4813,7 +4826,7 @@ body {
     width: 45%;
   }
   .final-btn {
-    width: 45%;
+    width: 47%;
   }
   .back-btn {
     width: 45%;
@@ -4824,10 +4837,10 @@ body {
   }
   .checkbox-block {
     min-width: 50%;
-    margin-bottom: 15px;
+    margin-bottom: 14px;
   }
   .checkbox-block:last-child {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
   .checkbox-block-cldr {
     width: 100%;
@@ -4835,6 +4848,9 @@ body {
   .checkbox-block-cldr input {
     width: 45%;
     margin-right: 0;
+  }
+  .checkbox-lbl-wrap:last-child {
+    margin-bottom: 25px;
   }
   .checkbox-btns-wrap {
     -ms-flex-wrap: wrap;
@@ -4853,11 +4869,15 @@ body {
   .checkbox-qw-7 {
     width: 100%;
   }
+  .my-range-block {
+    margin-bottom: 5px;
+  }
   .progress {
-    margin-bottom: 30px;
+    margin-bottom: 25px;
   }
   .left-block__title {
     font-size: 17px;
+    margin-bottom: 18px;
   }
   .offer__text {
     text-align: center;
@@ -5254,11 +5274,12 @@ body {
     -webkit-box-align: center;
         -ms-flex-align: center;
             align-items: center;
+    padding: 8px 0 8px 8px;
   }
   .test-block__offers img {
     width: 95px;
-    top: -20px;
-    left: -50px;
+    top: -17px;
+    left: -34px;
   }
   .test-block__left {
     width: 100%;
@@ -5288,6 +5309,9 @@ body {
   }
   .checkbox-block {
     padding-left: 0;
+  }
+  .checkbox-conditions {
+    width: 79%;
   }
   .slider-certificates .slick-arrow {
     width: 40px;
@@ -5403,6 +5427,9 @@ body {
     margin-left: 0;
     margin-right: 0;
   }
+  .programs-game-block {
+    width: 47%;
+  }
   .inp-block {
     -webkit-box-pack: justify;
         -ms-flex-pack: justify;
@@ -5461,7 +5488,10 @@ body {
             justify-content: center;
   }
   .footer-label img {
-    margin: 0 auto 20px;
+    margin: 0 auto 0;
+  }
+  .footer .logo {
+    width: 35%;
   }
   .footer-policy-lnk {
     text-align: center;

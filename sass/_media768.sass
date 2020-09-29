@@ -126,7 +126,16 @@
   .micro-transparent
     display: none
   .question
-    min-height: 175px
+    &_1
+      min-height: 175px
+    &_2
+      min-height: 138px
+    &_3
+      min-height: 185px
+    &_4
+      min-height: 170px
+    &_5
+      min-height: 175px
     &-form
       width: 100%
     &-inp
@@ -167,7 +176,7 @@
     padding: 15px 0
     width: 45%
   .final-btn
-    width: 45%
+    width: 47%
   .back-btn
     width: 45%
     padding: 15px 0
@@ -176,14 +185,16 @@
       font-size: 15px
     &-block
       min-width: 50%
-      margin-bottom: 15px
+      margin-bottom: 14px
       &:last-child
-        margin-bottom: 30px
+        margin-bottom: 25px
       &-cldr
         width: 100%
         input
           width: 45%
           margin-right: 0
+    &-lbl-wrap:last-child
+      margin-bottom: 25px
     &-btns-wrap
       flex-wrap: wrap
     &-qw-6
@@ -194,10 +205,13 @@
         line-height: 17px
     &-qw-7
       width: 100%
+  .my-range-block
+    margin-bottom: 5px
   .progress
-    margin-bottom: 30px
+    margin-bottom: 25px
   .left-block__title
     font-size: 17px
+    margin-bottom: 18px
   .offer__text
     text-align: center
     width: 85%
